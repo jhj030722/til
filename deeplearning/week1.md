@@ -1,12 +1,13 @@
 ## [혼자 공부하는 머신러닝+딥러닝] 18강. 심층 신경망 ▶️인공 신경망에 층을 추가하여 심층 신경망 만들어 보기
 
-![img1](../til/deeplearning/img/img1.png)
+
+![image](../img/img1.png)
 
 - tensorflow가 keras 모델 정의하고 층을 구성성
     - compile 메소드 호출 => 손실함수 등 정의
     - evaluate 구조로 모델 평가 
 
-
+![image](../img/img2.png)
 - 2개의 층
     - 입력층은 입력 데이터 그 자체
     - 2개의 층 : `은닉층`, `출력층` 
@@ -20,7 +21,7 @@ dense2 = keras.layers.Dense(10, activation='softmax')
 
 model = keras.Sequential([dense1, dens2])
 ```
-
+![image](../img/img3.png)
 - param 값이 내가 생각한 구조와 맞아 떨어지면 내가 구성한 대로 잘 동작하는 모델인 것
 - output shape 'none' 부분 -> 확률적 경사 하강법 batchsize
 
